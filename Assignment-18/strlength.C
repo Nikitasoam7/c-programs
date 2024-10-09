@@ -2,7 +2,9 @@
 int strlength(char *);
 int main()
 {
-  char st[]="hello! how are you.";
+  char st[30];
+  printf("Enter a sentence:");
+  gets(st);
   int length=strlength(st);
   printf("length of the string is %d.",length);
  return 0;
