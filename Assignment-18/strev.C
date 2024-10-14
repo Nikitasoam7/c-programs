@@ -11,7 +11,7 @@ int main()
   /*size_t is alias(typedef) name of 
   unsigned int, unsigned long,unsigned long long*/
   size_t len=strlength(st);
-  if(len==0&&st[len-1]=='\n')
+  if(len>0&&st[len-1]=='\n')
   st[len-1]='\0';
 
   printf("reverse string: %s",strev(st));
