@@ -35,6 +35,7 @@ int main()
         printf("first string is lexicographically larger");
     else 
         printf("both strings are equal");
+    getchar();
     return 0;
 }
 
