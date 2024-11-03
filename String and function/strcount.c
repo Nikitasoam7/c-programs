@@ -25,16 +25,21 @@ int main()
 //function defination to calculate number of words in a string
 int strcount(char* s)
 {
-    int i=0,count=0;
-    //loop to get each character
-    while(s[i]!='\0')
-    {
-
-        if(s[i]==32&&s[i+1]!='\0'&&s[i+1]!=32)//
-        count++;
-        else if(s[i]!=32&&count==0)//if it is frist character of string 
-        count++;
-        //moving to the next character
+    int i = 0, count = 0;
+    int in_word = 0; // Boolean flag to track if we are inside a word
+    
+    // Loop through the string
+    while (s[i] != '\0') {
+        // Check if the current character is not a space
+        if (s[i] != ' ') {
+            if (!in_word) {
+                count++;
+                in_word = 1; // Set the flag indicating for check if we are inside a word
+            }
+        }
+        else {
+            in_word = 0;
+        }
         i++;
     }
     return count;
