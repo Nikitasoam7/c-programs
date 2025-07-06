@@ -1,2 +1,2 @@
-# c-assignment-
-program
+# c-programs-
+programs for learning purpose
