@@ -21,7 +21,7 @@ void sort(int *ptr,int size)
         {
             int key=ptr[i];
             int j=i-1;
-            while(j>=0 && key<ptr[gj])
+            while(j>=0 && key<ptr[j])
             {
                 ptr[j+1]=ptr[j];
                 j--;
