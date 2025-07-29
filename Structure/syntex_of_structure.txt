@@ -1,0 +1,22 @@
+//sytem of a structure
+
+struct (name of structure) {
+    Data_type (name of structure members);
+    .....
+    .....
+};
+
+ # medthod 2 for structure defination
+struct (name of structure) {
+    Data_type (name of structure members);
+    .....
+    .....
+} emp1,emp2;  // with defining structure we have created two variables of this structure
+
+//Example of structure name employee with member variables id ,name and salary
+
+struct Employee {
+    int id;
+    char name[20];
+    float slary;
+};
