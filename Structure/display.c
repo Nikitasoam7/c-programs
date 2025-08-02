@@ -20,7 +20,7 @@ struct Employee input()
 }
 void display(struct Employee emp)
 {
-    printf("%d, %s, %f ",emp.id,emp.name,emp.salary);
+    printf("%d\t%s\t%f ",emp.id,emp.name,emp.salary);
 }
 int main()
 {
